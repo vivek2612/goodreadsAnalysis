@@ -1,0 +1,36 @@
+id = OrderedDict([(u'@type', u'integer'), ('#text', u'30843')])
+isbn = 1559701943
+isbn13 = 9781559701945
+text_reviews_count = OrderedDict([(u'@type', u'integer'), ('#text', u'214')])
+title = The Great Indian Novel
+image_url = https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
+small_image_url = https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png
+large_image_url = None
+link = https://www.goodreads.com/book/show/30843.The_Great_Indian_Novel
+num_pages = 423
+format = Paperback
+edition_information = None
+publisher = Arcade Publishing
+publication_day = 26
+publication_year = 1993
+publication_month = 2
+average_rating = 3.84
+ratings_count = 3978
+description = In this widely acclaimed novel, Shashi Tharoor has masterfully recast the two-thousand-year-old epic "The Mahabharata" with fictionalized - but highly recognizable - events and characters from twentieth-century Indian politics. Blending history and myth to chronicle the Indian struggle for freedom and independence, Tharoor directs his hilarious and often outrageous satire as much against Indian foibles and failings as against the bumblings of the British rulers. Despite its regional setting, this work can be enjoyed by readers unfamiliar with Indian history.
+authors = OrderedDict([(u'author', OrderedDict([(u'id', u'17287'), (u'name', u'Shashi Tharoor'), (u'role', None), (u'image_url', OrderedDict([(u'@nophoto', u'false'), ('#text', u'https://images.gr-assets.com/authors/1259658998p5/17287.jpg')])), (u'small_image_url', OrderedDict([(u'@nophoto', u'false'), ('#text', u'https://images.gr-assets.com/authors/1259658998p2/17287.jpg')])), (u'link', u'https://www.goodreads.com/author/show/17287.Shashi_Tharoor'), (u'average_rating', u'3.71'), (u'ratings_count', u'9684'), (u'text_reviews_count', u'718')]))])
+published = 1993
+rating = 0
+
+
+friend_list:
+ {
+                "id": "23286191",
+                "name": "Shikhar Garg",
+                "link": "https://www.goodreads.com/user/show/23286191-shikhar-garg",
+                "image_url": "https://images.gr-assets.com/users/1377095139p3/23286191.jpg",
+                "small_image_url": "https://images.gr-assets.com/users/1377095139p2/23286191.jpg",
+                "friends_count": "14",
+                "reviews_count": "25",
+                "is_mutual_friend": null,
+                "created_at": "Wed Aug 21 07:25:51 -0700 2013"
+            },
