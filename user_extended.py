@@ -6,6 +6,7 @@ Created on Sun Dec 18 14:51:52 2016
 """
 
 from goodreads.user import GoodreadsUser
+from goodreads import review
 
 class GoodreadsUserExtended(GoodreadsUser):
     '''
@@ -45,3 +46,24 @@ class GoodreadsUserExtended(GoodreadsUser):
             if len(self.friend_list) >= total_friends or not all:
                 break
         return self.friend_list
+        
+    def reviews(self, page=1):
+        """
+        Get all books and reviews on user's shelves
+        page = 'all' if all reviews are requested.
+            
+        """
+        all_reviews = []
+        start_page_index = page
+        if page=='all':
+            start_page_index = 1
+        while True:
+            try:
+                all_reviews += GoodreadsUser.reviews(self, page=start_page_index)
+            except:
+                break
+            start_page_index += 1
+            if page!='all':
+                break
+        print('total reviews collected from {} = {}'.format(self.name ,len(all_reviews)))
+        return all_reviews
