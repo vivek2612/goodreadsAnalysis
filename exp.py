@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# extract data from goodreads
 """
 Created on Sun Dec 18 10:25:38 2016
 
@@ -6,9 +7,9 @@ Created on Sun Dec 18 10:25:38 2016
 """
 
 from config import APP_KEY, APP_SECRET
+from config import DATA_DIR, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
 from goodreads import client
 from goodreads.book import GoodreadsBook
-from goodreads.review import GoodreadsReview
 from user_extended import GoodreadsUserExtended
 import json
 from collections import OrderedDict
@@ -53,10 +54,7 @@ def extract_author_info(author):
     info['average_rating'] = author._author_dict['average_rating']
     return info
 
-    
-DATA_DIR = 'E:/spyder_workspace/goodreads/goodreadsAnalysis/data/'
-ACCESS_TOKEN = 'jSWly3TI5LzC16xfQeCw'
-ACCESS_TOKEN_SECRET = '5D5DkUqHez5pAaE9wIYjaqjBELcamdigTwE4YUAj8'
+
 book_data = {}
 author_data = {}
     
